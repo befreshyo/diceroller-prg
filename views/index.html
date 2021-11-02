@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+
+<!--
+    Author:  Paula Grata
+    Class:   Software Engineering
+    Description: Paula's sample Dice Roller application.
+-->
+    <head>
+        <title>Paula Grata DR</title>
+        <link rel="stylesheet" href="/css/index.css">
+        <script src="/js/server.js"></script>
+    </head>
+
+
+    <body onload="start()">
+        <div class="banner">
+            <div class="navbar">
+                <h1><a href="https://portfolio-prg.azurewebsites.net/">P. GRATA</a></h1>
+            </div>
+            <div class="content">
+                <h1>Dice Rollin'</h1>
+                <h2>determine who has the greater number</h2><br><br><br>
+
+                <h2>person 1:</h2>
+                <button type="dice1" onclick="RollDiceX()"><img src="/img/dicepic.png" alt="dice" style="width:170px;height:170px;"/></button>
+                <p><input id="diceX" type="text" value="" size="5" disabled></p>
+
+                <h2>person 2:</h2>
+                <button type="dice2" onclick="RollDice()"><img src="/img/dicepic.png" alt="dice" style="width:170px;height:170px;"/></button>
+                <p><input id="diceY" type="text" value="" size="5" disabled></p>
+                
+                <h3>winner: <element id="resultID"></element></h3>
+            </div>
+        </div>
+    </body>
+</html>
